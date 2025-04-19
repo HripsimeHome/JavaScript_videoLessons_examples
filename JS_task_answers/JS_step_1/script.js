@@ -45,7 +45,3 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
-
-
-const test = 5;
-console.log(test);
