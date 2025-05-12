@@ -38,7 +38,7 @@ console.log(products.join("; "));
 
 
 let str2 = "apple,banana,orange,strawberry2";
-let arr2 = str2.split(" ");  
+let arr2 = str2.split(",");  
 console.log(arr2); // ['apple', 'banana', 'orange']
 
 
@@ -83,3 +83,11 @@ console.log(fruits);  // ['apple', 'kiwi', 'banana']
 let arrNumbers = [10, 20, 30, 40, 50];
 let newArNumbers = arrNumbers.slice(1, 3);
 console.log(newArNumbers); // [20, 30]
+
+
+// Метод concat() в JavaScript используется для объединения массивов или строк, не изменяя исходные значения.
+
+let array1 = [1, 2];
+let array2 = [3, 4];
+let result = array1.concat(array2);
+console.log(result);
