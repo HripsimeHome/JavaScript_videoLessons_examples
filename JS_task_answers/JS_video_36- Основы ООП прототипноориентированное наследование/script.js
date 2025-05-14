@@ -35,7 +35,6 @@ jonh.sayHello();
 // Вариант когда нужно СОЗДАТЬ jonh  
 
 
-
 const soldier2 = {
   health: 400, 
   armor: 100,
@@ -46,5 +45,4 @@ const soldier2 = {
 
 
 const jonh2 = Object.create(soldier2);
-jonh2.sayHello();
- 
+jonh2.sayHello(); 
