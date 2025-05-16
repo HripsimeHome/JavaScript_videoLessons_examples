@@ -77,7 +77,8 @@ circles[0].remove(); // Раньше был removeChild()
 hearts[0].replaceWith(circles[0]); // Чтобы увидеть результат поставить под комментарии circles[0].remove();
 
 //Для всатвки тегов с текстом
-div.innerHTML = "<h2>Hello world</h2>";
+// когда нужно полностью заменить содержимое.
+div.innertHTML = "<h2>Hello world</h2>"; 
 
 // ТОлко для текста
 
@@ -85,4 +86,7 @@ div.textContent = "Hello";
 
 // Вставка элементов - beforebegin, beforeend, afterbegin, agterend
 
-div.insertAdjustmentHTML("beforebegin", "<h2>Hello insertAdjustmentHTML</h2>");
+ div.insertAdjacentHTML("afterend", "<h2>Hello insertAdjacentHTML</h2>"); // Не сработало
+
+//insertAdjacentHTML — когда хочешь добавить HTML без удаления старого. 
+box.insertAdjacentHTML("beforeend", "<p>Hello World</p>");
